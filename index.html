@@ -1,3 +1,6 @@
+<!--
+ Cretead by: Christian Niro
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,6 +21,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<script src="./scripts/nav.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
@@ -54,61 +58,222 @@
 		</nav>
 
 		<main>
-			<div class="top">
-				<img
-					src="./assets/images/sfondoRollo.png"
-					alt="background-image"
-					class="bg-image"
-				/>
-				<div class="dark-left"></div>
-				<div class="dark-bottom"></div>
+			<div id="home">
+				<div class="top">
+					<img
+						src="./assets/images/sfondoRollo.png"
+						alt="background-image"
+						class="bg-image"
+					/>
+					<div class="dark-left"></div>
+					<div class="dark-bottom"></div>
 
-				<div class="billboard">
-					<img src="./assets/images/rollo.png" alt="bg-img" />
-					<div class="title">Guarda subito la stagione 2</div>
-					<div class="description">
-						Ciao, volevo chiedere con estrema gentilezza: "ma da voi c'è anche
-						un posticino per me?"
+					<div class="billboard">
+						<img src="./assets/images/rollo.png" alt="bg-img" />
+						<div class="title">Guarda subito la stagione 2</div>
+						<div class="description">
+							Ciao, volevo chiedere con estrema gentilezza: "ma da voi c'è anche
+							un posticino per me?"
+						</div>
+						<div class="buttons">
+							<button id="playButton" class="play-btn">
+								<i class="fa fa-play"></i>
+								<div>Riproduci</div>
+							</button>
+
+							<button class="info-btn">
+								<i data-feather="info"></i>
+								<div>Altre info</div>
+							</button>
+						</div>
 					</div>
-					<div class="buttons">
-						<button id="playButton" class="play-btn">
-							<i class="fa fa-play"></i>
-							<div>Riproduci</div>
-						</button>
-
-						<button class="info-btn">
-							<i data-feather="info"></i>
-							<div>Altre info</div>
-						</button>
+					<div class="content-row column">
+						<div class="icons-title">
+							<div class="icons">
+								<i class="icon1" data-feather="thumbs-up"></i>
+								<i class="icon2" data-feather="thumbs-up"></i>
+							</div>
+							<div class="title">Pensiamo ti appassioneranno</div>
+						</div>
+						<div class="slider">
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfNEZtBlGdb8YiWWNwSqDZV0y-zAGM7P8QWCuPQsKafunyS9dA5Bpwm88-z62Eq9KQ90knw-rIng4SQs_u0bpLUL1Tja40oyS7GmuGitXMN32svxlBAsVSkTSi7wXgz7OkUJIl0A0yiLtGA57l97yirCpNTSh4op2_t68sA0DEtUHtk0sk3M7rK4RUV0HSZ6-XCzmw0p3OeA6JaD5bmaBW7srjDKmjJUsZsz4DnaPxuIX8RhBQATeTCcvbBGwzHoQu_JbtO4pCN_I4EcM9L70Ag.webp?r=eb2"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfImpbOWASm4fcpoRCxlA7caHXxF3NVPKEzB01qXQPXTxwOsJYeiQVdN2Vgi4kyAQycF8Gljj3FuX-tLUzuSHI9AwnhCRDSIM8s.webp?r=a44"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABafJW3YeqJXizjF3HaQX1-D8zaapU8j4YWfoQLaX4dAEOL_YqnH8Zaj-F0XDIAIOK0LAWsWl3xQMvrjlAPfz6otc-miwaCQ7SDE.webp?r=90f"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQh-iwBnAjej9RQ-kY7dyK-nTYrxN08RGaieM1Nc9g79hGHIV_qWpaF3-nP-j2V3rjQBrRQ6RrSc0mlDrZ6yg3CX-bjXALRc0XA.webp?r=058"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZfQiC4A7fdqWHd3pogv-bo97q_A1M_OkIOWzLm3mNFxpjxsSg7LOICRd--nJ9sDBOSjybWqayL3Rj562vArOGiYSLZfJKNqPmk.webp?r=4fc"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfdlYZb-2QQBpCFHO1cODmbufS_T6A37AUaDKTpSRGE17XNgBu3jcBH77xDems7CHDjD14D954JPaRmqkVrU24mewcTcRkohXf2HYETvrLwjwd3yXbdhimj_uUo9204ePTMJ.jpg?r=112"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa1tzuogsK5vcrPTuOSI2PIKm-RLlsnj7HIKQtcX22LQR1uUvWBnDBOaTwzL-WyGWsEaYNhTQ9V7d2Y6mrIcwbi9vJF5z3i4OAP-XQ_LtMCJfwAZjCuWfhTe0W_Gxtnr-XOQ.jpg?r=044"
+								/>
+							</div>
+							<div class="content">
+								<img
+									src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUtMzpWj4JUSGUXXGrbgHW_mKSOUiPptdVvAKHzURG0WpEyID4c_sfdPLUXEPltbk0kAP1PF1ppvNjK83P8OMfV21BHA7x9nwPs.webp?r=f47"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
+				<div class="content spaced-content"></div>
 				<div class="content-row column">
-					<div class="icons-title">
-						<div class="icons">
-							<i class="icon1" data-feather="thumbs-up"></i>
-							<i class="icon2" data-feather="thumbs-up"></i>
+					<div class="title">Top 6 dei film in Italia oggi</div>
+					<div class="slider">
+						<div class="content rank">
+							<svg
+								id="rank-1"
+								width="100%"
+								height="100%"
+								viewBox="-20 0 70 154"
+								class="svg-icon svg-icon-rank-1 top-10-rank"
+							>
+								<path
+									stroke="#595959"
+									stroke-linejoin="square"
+									stroke-width="4"
+									d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"
+								></path>
+							</svg>
+							<img id="locandina1" src="./assets/images/ilTerrorista.jpeg" />
 						</div>
-						<div class="title">Pensiamo ti appassioneranno</div>
+
+						<div class="content rank">
+							<svg
+								id="rank-2"
+								width="100%"
+								height="100%"
+								viewBox="0 0 80 154"
+								class="svg-icon svg-icon-rank-2 top-10-rank"
+							>
+								<path
+									stroke="#595959"
+									stroke-linejoin="square"
+									stroke-width="4"
+									d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203 3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803 3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492 6.493-7.389 13.803-8.693 21.952h34.055c1.236-3.52 3.398-6.52 6.459-8.97 3.54-2.834 8.277-4.224 14.147-4.224 5.93 0 10.552 1.537 13.76 4.681 3.181 3.12 4.791 7.024 4.791 11.594 0 4.151-1.16 7.934-3.468 11.298-2.192 3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z"
+								></path>
+							</svg>
+							<img id="locandina2" src="./assets/images/halloween.jpeg" />
+						</div>
+
+						<div class="content rank">
+							<svg
+								id="rank-3"
+								width="100%"
+								height="100%"
+								viewBox="0 0 80 154"
+								class="svg-icon svg-icon-rank-3 top-10-rank"
+							>
+								<path
+									stroke="#595959"
+									stroke-linejoin="square"
+									stroke-width="4"
+									d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 11.315 0 4.553-1.853 8.395-5.473 11.38-3.547 2.926-8.18 4.37-13.821 4.37H41.44v28.366h16.77c5.572 0 10.275 1.227 14.068 3.711 4.02 2.633 6.071 6.581 6.071 11.616 0 5.705-1.943 9.975-5.853 12.562-3.658 2.42-8.292 3.61-13.863 3.61-5.205 0-9.82-.94-13.827-2.836-3.698-1.75-6.32-4.272-7.785-7.529H2.33c2.096 12.089 7.761 21.65 17.028 28.78C29.242 148.175 42.594 152 59.476 152c10.706 0 20.175-1.783 28.42-5.337 8.185-3.528 14.575-8.486 19.208-14.884 4.595-6.346 6.896-13.938 6.896-22.837 0-6.952-1.93-13.494-5.81-19.666-3.815-6.07-9.68-10.367-17.683-12.908l-5.46-1.735 5.353-2.04c6.659-2.538 11.667-6.338 15.083-11.412 3.431-5.096 5.142-10.806 5.142-17.181 0-8.471-2.262-15.778-6.787-21.985-4.574-6.275-10.7-11.17-18.408-14.696C77.683 3.775 69.109 2 59.687 2 44.084 2 31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z"
+								></path>
+							</svg>
+							<img id="locandina3" src="./assets/images/tgBello.jpeg" />
+						</div>
+
+						<div class="content rank">
+							<svg
+								id="rank-4"
+								width="100%"
+								height="100%"
+								viewBox="0 0 81 154"
+								class="svg-icon svg-icon-rank-4 top-10-rank"
+							>
+								<path
+									stroke="#595959"
+									stroke-linejoin="square"
+									stroke-width="4"
+									d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z"
+								></path>
+							</svg>
+							<img id="locandina4" src="./assets/images/lacrime.jpeg" />
+						</div>
+
+						<div class="content rank">
+							<svg
+								id="rank-5"
+								width="100%"
+								height="100%"
+								viewBox="0 0 81 154"
+								class="svg-icon svg-icon-rank-5 top-10-rank"
+							>
+								<path
+									stroke="#595959"
+									stroke-linejoin="square"
+									stroke-width="4"
+									d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 8.37 6.104 14.265 0 6.041-2.044 10.89-6.121 14.387-3.999 3.43-9.162 5.132-15.401 5.132-4.299 0-8.17-.694-11.601-2.095-3.11-1.268-5.577-2.946-7.368-5.042H2.592c3.308 11.593 9.782 20.623 19.46 27.164C32.472 148.464 45.64 152 61.602 152c10.12 0 19.294-1.99 27.548-5.966 8.198-3.949 14.711-9.718 19.572-17.335 4.844-7.59 7.278-16.95 7.278-28.123 0-9.182-2.013-17.314-6.032-24.431-4.02-7.118-9.514-12.7-16.51-16.775-6.99-4.072-14.849-6.109-23.612-6.109-11.06 0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z"
+								></path>
+							</svg>
+							<img id="locandina5" src="./assets/images/cinica.jpeg" />
+						</div>
+
+						<div class="content rank">
+							<svg
+								id="rank-6"
+								width="100%"
+								height="100%"
+								viewBox="0 0 81 154"
+								class="svg-icon svg-icon-rank-6 top-10-rank"
+							>
+								<path
+									stroke="#595959"
+									stroke-linejoin="square"
+									stroke-width="4"
+									d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947 3.042-6.273 4.57-13.556 4.57-21.868 0-8.812-2.062-16.636-6.182-23.51-4.134-6.897-9.643-12.293-16.55-16.212-6.905-3.917-14.48-5.874-22.76-5.874-14.546 0-25.34 4.55-32.569 13.63l-4.003 5.03.443-6.413c.874-12.636 3.56-21.85 8.168-27.654 4.69-5.907 10.885-8.9 18.421-8.9 4.26 0 7.826.734 10.685 2.24 2.445 1.287 4.396 2.867 5.829 4.74zM62.605 123c-5.825 0-10.902-1.894-15.136-5.655C43.173 113.528 41 108.603 41 102.71c0-5.881 2.164-10.864 6.44-14.818C51.674 83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z"
+								></path>
+							</svg>
+							<img id="locandina6" src="./assets/images/laBabySitter.jpeg" />
+						</div>
 					</div>
+				</div>
+
+				<div class="content-row column">
+					<div class="title">Scelti per te oggi</div>
 					<div class="slider">
 						<div class="content">
 							<img
-								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfNEZtBlGdb8YiWWNwSqDZV0y-zAGM7P8QWCuPQsKafunyS9dA5Bpwm88-z62Eq9KQ90knw-rIng4SQs_u0bpLUL1Tja40oyS7GmuGitXMN32svxlBAsVSkTSi7wXgz7OkUJIl0A0yiLtGA57l97yirCpNTSh4op2_t68sA0DEtUHtk0sk3M7rK4RUV0HSZ6-XCzmw0p3OeA6JaD5bmaBW7srjDKmjJUsZsz4DnaPxuIX8RhBQATeTCcvbBGwzHoQu_JbtO4pCN_I4EcM9L70Ag.webp?r=eb2"
+								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVxVzUmKjERTF4TlU-EIxkCVeTEY_x2XIjTJSKVjf8pDUerX_ce1qhwdG6Q-Py-kLWhXrpDFC5ndP_aOtg-ArTu6gw07Ri-9EM8.webp?r=488"
 							/>
 						</div>
 						<div class="content">
 							<img
-								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfImpbOWASm4fcpoRCxlA7caHXxF3NVPKEzB01qXQPXTxwOsJYeiQVdN2Vgi4kyAQycF8Gljj3FuX-tLUzuSHI9AwnhCRDSIM8s.webp?r=a44"
+								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdu19QRp7WQynP0f8zPX8wdJrX0VEDx4TzXFgW05u43DLvsb1BJ9OzBSGcP8lCuVlne8ZUWXU1I5gthRWlgabnuXhJaKAeYP-fT4F3pPsPdqKIV75wrc-cHZv42iTzW8ZqSq.jpg?r=fe7"
 							/>
 						</div>
 						<div class="content">
 							<img
-								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABafJW3YeqJXizjF3HaQX1-D8zaapU8j4YWfoQLaX4dAEOL_YqnH8Zaj-F0XDIAIOK0LAWsWl3xQMvrjlAPfz6otc-miwaCQ7SDE.webp?r=90f"
+								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdcz1BS3qcyS6si--XaVyYE39P0BZ04OaaAFARZkRNJhtEpObX_0Vg1r-ieW7MQjIncF0eD4e5wsiTluleq6madOYku0wM_SYgE.webp?r=183"
 							/>
 						</div>
 						<div class="content">
 							<img
-								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQh-iwBnAjej9RQ-kY7dyK-nTYrxN08RGaieM1Nc9g79hGHIV_qWpaF3-nP-j2V3rjQBrRQ6RrSc0mlDrZ6yg3CX-bjXALRc0XA.webp?r=058"
+								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXqKV3xHWMLEAy6IKBZ7nn3szu3DYcW-wCILOB2CgugDoEi8d8slGtV34a7pbyDOrjV7MDaz63MqO4hXqGejjVMKCbwzy2vyf0A.webp?r=8d1"
 							/>
 						</div>
 						<div class="content">
@@ -118,271 +283,118 @@
 						</div>
 						<div class="content">
 							<img
-								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfdlYZb-2QQBpCFHO1cODmbufS_T6A37AUaDKTpSRGE17XNgBu3jcBH77xDems7CHDjD14D954JPaRmqkVrU24mewcTcRkohXf2HYETvrLwjwd3yXbdhimj_uUo9204ePTMJ.jpg?r=112"
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbNLtzh5-D4Tv_6aQdDnOEEtyII1Cmwvn47gLkSdPmZOX4cdRaUdftd7m0O0dWjUgV0gyLzAnxtO6O5xtBFh-BiYL03VTveGFvN-ThhmS67Ek7ZWq8UE9k88D9Ub6T9GzkgS.jpg?r=777"
 							/>
 						</div>
 						<div class="content">
 							<img
-								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa1tzuogsK5vcrPTuOSI2PIKm-RLlsnj7HIKQtcX22LQR1uUvWBnDBOaTwzL-WyGWsEaYNhTQ9V7d2Y6mrIcwbi9vJF5z3i4OAP-XQ_LtMCJfwAZjCuWfhTe0W_Gxtnr-XOQ.jpg?r=044"
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZjZlwTGNeE4vNmWzLpgVk3RIgVJj7gx-gKatZ2Tk1ZkpOMUoBT-HUEwrjhWIIw_OavTcymeJsabbFtBE6Y9ibVnv1UNAojt_O0.webp?r=6ba"
 							/>
 						</div>
 						<div class="content">
 							<img
-								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUtMzpWj4JUSGUXXGrbgHW_mKSOUiPptdVvAKHzURG0WpEyID4c_sfdPLUXEPltbk0kAP1PF1ppvNjK83P8OMfV21BHA7x9nwPs.webp?r=f47"
+								src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfImpbOWASm4fcpoRCxlA7caHXxF3NVPKEzB01qXQPXTxwOsJYeiQVdN2Vgi4kyAQycF8Gljj3FuX-tLUzuSHI9AwnhCRDSIM8s.webp?r=a44"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-row column">
+					<div class="title">Novità su Netflix</div>
+					<div class="slider">
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcT0f0nzolJNvHO_0BoiuXm6UKNoBIKjAFA8M9-p8-p3o_qyfsy9tcTA-djieHaD6sz9wFt4v9TCoXurl1Mwmpyed2KmCbxLEXAjSj-_sQF9XgzNJvOVK2IC8nAwzt0OVSOA.jpg?r=807"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW1w0cR1nRSWPhcsnAPCcnoLvdS0QEVZMEINrTfOouu5r33G_fuYZOZqwIVRw6fGcgul3jJXbQiqekkVMRGW8H3nQ4wD8m3oAL4HFoho3swYOw0O9kDsfQIaOIfnG7S4B-VN.jpg?r=e20"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQpnK-uuOe7H7X3RMJKcroyNCybbVqlpkQEBlMZSM0nhbfjXH5QtVXtsUJ1JaWAslHy83WBoWpKciuuoURdF9Ccug19-wV3w-Sghdp4FMz7pwnwewfUwIm5EfLzL9PqT-ApC.jpg?r=ea5"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXtJErMhtlXyJXl9bsAqyJofDd-iqhfmJzGa0wTiCkfbB15tiZW_Vbj4HvL7Ssubiee8Aqz8PjLANwV_4pAhlQ9GOqfsL-bd3iU.webp?r=cd8"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcdM5FUhIza-cMbqsKwiZ1Qf8IohEk0bYwCHdcISbvM5rKrzE6GCsaiLgWchu2Q6XhUiycUFby9Px1twB9UzUXMXUiiQAgje-VaGFswJ5mJDRJ12sZc7chL26lBldlIIq2xn.jpg?r=9a9"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWSZvK2iun4Pu_UVXI-BR46oKfLlvSwdq0CQtRWfwXoZKrWlJb55ZhiXD8KH4IhN46AXuIwGqk-ObL8C_q9TYd0iyOKdgRMkk8c.webp?r=acc"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSiHGQl-YqLeZ-IZmqOxz7pbxMKvUBTR86e15QIHtcOLeuuPiyZZ2dOtU9tbVTkh3KKuAFCUb4zVoA0Gt9P6ef5Xr_Dnt62ldS2u8c5v9desOkY1APv1ePPcDO6e8LRtMi0.jpg?r=cb4"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWr6a3_UzHdK4GwmzXxCVIoYob0rK_Ex4yBiet0bmzcLLKmG3VcLLRjhVi1NYiE-dweEqa5mg0tJ82SrEnqoHqtQG_bPJ7ET6gQ.webp?r=adc"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-row column">
+					<div class="title">La mia lista</div>
+					<div class="slider">
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcT0f0nzolJNvHO_0BoiuXm6UKNoBIKjAFA8M9-p8-p3o_qyfsy9tcTA-djieHaD6sz9wFt4v9TCoXurl1Mwmpyed2KmCbxLEXAjSj-_sQF9XgzNJvOVK2IC8nAwzt0OVSOA.jpg?r=807"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW1w0cR1nRSWPhcsnAPCcnoLvdS0QEVZMEINrTfOouu5r33G_fuYZOZqwIVRw6fGcgul3jJXbQiqekkVMRGW8H3nQ4wD8m3oAL4HFoho3swYOw0O9kDsfQIaOIfnG7S4B-VN.jpg?r=e20"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQpnK-uuOe7H7X3RMJKcroyNCybbVqlpkQEBlMZSM0nhbfjXH5QtVXtsUJ1JaWAslHy83WBoWpKciuuoURdF9Ccug19-wV3w-Sghdp4FMz7pwnwewfUwIm5EfLzL9PqT-ApC.jpg?r=ea5"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXtJErMhtlXyJXl9bsAqyJofDd-iqhfmJzGa0wTiCkfbB15tiZW_Vbj4HvL7Ssubiee8Aqz8PjLANwV_4pAhlQ9GOqfsL-bd3iU.webp?r=cd8"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcdM5FUhIza-cMbqsKwiZ1Qf8IohEk0bYwCHdcISbvM5rKrzE6GCsaiLgWchu2Q6XhUiycUFby9Px1twB9UzUXMXUiiQAgje-VaGFswJ5mJDRJ12sZc7chL26lBldlIIq2xn.jpg?r=9a9"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWSZvK2iun4Pu_UVXI-BR46oKfLlvSwdq0CQtRWfwXoZKrWlJb55ZhiXD8KH4IhN46AXuIwGqk-ObL8C_q9TYd0iyOKdgRMkk8c.webp?r=acc"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSiHGQl-YqLeZ-IZmqOxz7pbxMKvUBTR86e15QIHtcOLeuuPiyZZ2dOtU9tbVTkh3KKuAFCUb4zVoA0Gt9P6ef5Xr_Dnt62ldS2u8c5v9desOkY1APv1ePPcDO6e8LRtMi0.jpg?r=cb4"
+							/>
+						</div>
+						<div class="content">
+							<img
+								src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWr6a3_UzHdK4GwmzXxCVIoYob0rK_Ex4yBiet0bmzcLLKmG3VcLLRjhVi1NYiE-dweEqa5mg0tJ82SrEnqoHqtQG_bPJ7ET6gQ.webp?r=adc"
 							/>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content spaced-content"></div>
-			<div class="content-row column">
-				<div class="title">Top 6 dei film in Italia oggi</div>
-				<div class="slider">
-					<div class="content rank">
-						<svg
-							id="rank-1"
-							width="100%"
-							height="100%"
-							viewBox="-20 0 70 154"
-							class="svg-icon svg-icon-rank-1 top-10-rank"
-						>
-							<path
-								stroke="#595959"
-								stroke-linejoin="square"
-								stroke-width="4"
-								d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"
-							></path>
-						</svg>
-						<img id="locandina1" src="./assets/images/ilTerrorista.jpeg" />
-					</div>
-
-					<div class="content rank">
-						<svg
-							id="rank-2"
-							width="100%"
-							height="100%"
-							viewBox="0 0 80 154"
-							class="svg-icon svg-icon-rank-2 top-10-rank"
-						>
-							<path
-								stroke="#595959"
-								stroke-linejoin="square"
-								stroke-width="4"
-								d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203 3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803 3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492 6.493-7.389 13.803-8.693 21.952h34.055c1.236-3.52 3.398-6.52 6.459-8.97 3.54-2.834 8.277-4.224 14.147-4.224 5.93 0 10.552 1.537 13.76 4.681 3.181 3.12 4.791 7.024 4.791 11.594 0 4.151-1.16 7.934-3.468 11.298-2.192 3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z"
-							></path>
-						</svg>
-						<img id="locandina2" src="./assets/images/halloween.jpeg" />
-					</div>
-
-					<div class="content rank">
-						<svg
-							id="rank-3"
-							width="100%"
-							height="100%"
-							viewBox="0 0 80 154"
-							class="svg-icon svg-icon-rank-3 top-10-rank"
-						>
-							<path
-								stroke="#595959"
-								stroke-linejoin="square"
-								stroke-width="4"
-								d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 11.315 0 4.553-1.853 8.395-5.473 11.38-3.547 2.926-8.18 4.37-13.821 4.37H41.44v28.366h16.77c5.572 0 10.275 1.227 14.068 3.711 4.02 2.633 6.071 6.581 6.071 11.616 0 5.705-1.943 9.975-5.853 12.562-3.658 2.42-8.292 3.61-13.863 3.61-5.205 0-9.82-.94-13.827-2.836-3.698-1.75-6.32-4.272-7.785-7.529H2.33c2.096 12.089 7.761 21.65 17.028 28.78C29.242 148.175 42.594 152 59.476 152c10.706 0 20.175-1.783 28.42-5.337 8.185-3.528 14.575-8.486 19.208-14.884 4.595-6.346 6.896-13.938 6.896-22.837 0-6.952-1.93-13.494-5.81-19.666-3.815-6.07-9.68-10.367-17.683-12.908l-5.46-1.735 5.353-2.04c6.659-2.538 11.667-6.338 15.083-11.412 3.431-5.096 5.142-10.806 5.142-17.181 0-8.471-2.262-15.778-6.787-21.985-4.574-6.275-10.7-11.17-18.408-14.696C77.683 3.775 69.109 2 59.687 2 44.084 2 31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z"
-							></path>
-						</svg>
-						<img id="locandina3" src="./assets/images/tgBello.jpeg" />
-					</div>
-
-					<div class="content rank">
-						<svg
-							id="rank-4"
-							width="100%"
-							height="100%"
-							viewBox="0 0 81 154"
-							class="svg-icon svg-icon-rank-4 top-10-rank"
-						>
-							<path
-								stroke="#595959"
-								stroke-linejoin="square"
-								stroke-width="4"
-								d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z"
-							></path>
-						</svg>
-						<img id="locandina4" src="./assets/images/lacrime.jpeg" />
-					</div>
-
-					<div class="content rank">
-						<svg
-							id="rank-5"
-							width="100%"
-							height="100%"
-							viewBox="0 0 81 154"
-							class="svg-icon svg-icon-rank-5 top-10-rank"
-						>
-							<path
-								stroke="#595959"
-								stroke-linejoin="square"
-								stroke-width="4"
-								d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 8.37 6.104 14.265 0 6.041-2.044 10.89-6.121 14.387-3.999 3.43-9.162 5.132-15.401 5.132-4.299 0-8.17-.694-11.601-2.095-3.11-1.268-5.577-2.946-7.368-5.042H2.592c3.308 11.593 9.782 20.623 19.46 27.164C32.472 148.464 45.64 152 61.602 152c10.12 0 19.294-1.99 27.548-5.966 8.198-3.949 14.711-9.718 19.572-17.335 4.844-7.59 7.278-16.95 7.278-28.123 0-9.182-2.013-17.314-6.032-24.431-4.02-7.118-9.514-12.7-16.51-16.775-6.99-4.072-14.849-6.109-23.612-6.109-11.06 0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z"
-							></path>
-						</svg>
-						<img id="locandina5" src="./assets/images/cinica.jpeg" />
-					</div>
-
-					<div class="content rank">
-						<svg
-							id="rank-6"
-							width="100%"
-							height="100%"
-							viewBox="0 0 81 154"
-							class="svg-icon svg-icon-rank-6 top-10-rank"
-						>
-							<path
-								stroke="#595959"
-								stroke-linejoin="square"
-								stroke-width="4"
-								d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947 3.042-6.273 4.57-13.556 4.57-21.868 0-8.812-2.062-16.636-6.182-23.51-4.134-6.897-9.643-12.293-16.55-16.212-6.905-3.917-14.48-5.874-22.76-5.874-14.546 0-25.34 4.55-32.569 13.63l-4.003 5.03.443-6.413c.874-12.636 3.56-21.85 8.168-27.654 4.69-5.907 10.885-8.9 18.421-8.9 4.26 0 7.826.734 10.685 2.24 2.445 1.287 4.396 2.867 5.829 4.74zM62.605 123c-5.825 0-10.902-1.894-15.136-5.655C43.173 113.528 41 108.603 41 102.71c0-5.881 2.164-10.864 6.44-14.818C51.674 83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z"
-							></path>
-						</svg>
-						<img id="locandina6" src="./assets/images/laBabySitter.jpeg" />
-					</div>
-				</div>
-			</div>
-
-			<div class="content-row column">
-				<div class="title">Scelti per te oggi</div>
-				<div class="slider">
-					<div class="content">
-						<img
-							src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVxVzUmKjERTF4TlU-EIxkCVeTEY_x2XIjTJSKVjf8pDUerX_ce1qhwdG6Q-Py-kLWhXrpDFC5ndP_aOtg-ArTu6gw07Ri-9EM8.webp?r=488"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdu19QRp7WQynP0f8zPX8wdJrX0VEDx4TzXFgW05u43DLvsb1BJ9OzBSGcP8lCuVlne8ZUWXU1I5gthRWlgabnuXhJaKAeYP-fT4F3pPsPdqKIV75wrc-cHZv42iTzW8ZqSq.jpg?r=fe7"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdcz1BS3qcyS6si--XaVyYE39P0BZ04OaaAFARZkRNJhtEpObX_0Vg1r-ieW7MQjIncF0eD4e5wsiTluleq6madOYku0wM_SYgE.webp?r=183"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXqKV3xHWMLEAy6IKBZ7nn3szu3DYcW-wCILOB2CgugDoEi8d8slGtV34a7pbyDOrjV7MDaz63MqO4hXqGejjVMKCbwzy2vyf0A.webp?r=8d1"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZfQiC4A7fdqWHd3pogv-bo97q_A1M_OkIOWzLm3mNFxpjxsSg7LOICRd--nJ9sDBOSjybWqayL3Rj562vArOGiYSLZfJKNqPmk.webp?r=4fc"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbNLtzh5-D4Tv_6aQdDnOEEtyII1Cmwvn47gLkSdPmZOX4cdRaUdftd7m0O0dWjUgV0gyLzAnxtO6O5xtBFh-BiYL03VTveGFvN-ThhmS67Ek7ZWq8UE9k88D9Ub6T9GzkgS.jpg?r=777"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZjZlwTGNeE4vNmWzLpgVk3RIgVJj7gx-gKatZ2Tk1ZkpOMUoBT-HUEwrjhWIIw_OavTcymeJsabbFtBE6Y9ibVnv1UNAojt_O0.webp?r=6ba"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="http://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfImpbOWASm4fcpoRCxlA7caHXxF3NVPKEzB01qXQPXTxwOsJYeiQVdN2Vgi4kyAQycF8Gljj3FuX-tLUzuSHI9AwnhCRDSIM8s.webp?r=a44"
-						/>
-					</div>
-				</div>
-			</div>
-
-			<div class="content-row column">
-				<div class="title">Novità su Netflix</div>
-				<div class="slider">
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcT0f0nzolJNvHO_0BoiuXm6UKNoBIKjAFA8M9-p8-p3o_qyfsy9tcTA-djieHaD6sz9wFt4v9TCoXurl1Mwmpyed2KmCbxLEXAjSj-_sQF9XgzNJvOVK2IC8nAwzt0OVSOA.jpg?r=807"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW1w0cR1nRSWPhcsnAPCcnoLvdS0QEVZMEINrTfOouu5r33G_fuYZOZqwIVRw6fGcgul3jJXbQiqekkVMRGW8H3nQ4wD8m3oAL4HFoho3swYOw0O9kDsfQIaOIfnG7S4B-VN.jpg?r=e20"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQpnK-uuOe7H7X3RMJKcroyNCybbVqlpkQEBlMZSM0nhbfjXH5QtVXtsUJ1JaWAslHy83WBoWpKciuuoURdF9Ccug19-wV3w-Sghdp4FMz7pwnwewfUwIm5EfLzL9PqT-ApC.jpg?r=ea5"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXtJErMhtlXyJXl9bsAqyJofDd-iqhfmJzGa0wTiCkfbB15tiZW_Vbj4HvL7Ssubiee8Aqz8PjLANwV_4pAhlQ9GOqfsL-bd3iU.webp?r=cd8"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcdM5FUhIza-cMbqsKwiZ1Qf8IohEk0bYwCHdcISbvM5rKrzE6GCsaiLgWchu2Q6XhUiycUFby9Px1twB9UzUXMXUiiQAgje-VaGFswJ5mJDRJ12sZc7chL26lBldlIIq2xn.jpg?r=9a9"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWSZvK2iun4Pu_UVXI-BR46oKfLlvSwdq0CQtRWfwXoZKrWlJb55ZhiXD8KH4IhN46AXuIwGqk-ObL8C_q9TYd0iyOKdgRMkk8c.webp?r=acc"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSiHGQl-YqLeZ-IZmqOxz7pbxMKvUBTR86e15QIHtcOLeuuPiyZZ2dOtU9tbVTkh3KKuAFCUb4zVoA0Gt9P6ef5Xr_Dnt62ldS2u8c5v9desOkY1APv1ePPcDO6e8LRtMi0.jpg?r=cb4"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWr6a3_UzHdK4GwmzXxCVIoYob0rK_Ex4yBiet0bmzcLLKmG3VcLLRjhVi1NYiE-dweEqa5mg0tJ82SrEnqoHqtQG_bPJ7ET6gQ.webp?r=adc"
-						/>
-					</div>
-				</div>
-			</div>
-
-			<div class="content-row column">
-				<div class="title">La mia lista</div>
-				<div class="slider">
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcT0f0nzolJNvHO_0BoiuXm6UKNoBIKjAFA8M9-p8-p3o_qyfsy9tcTA-djieHaD6sz9wFt4v9TCoXurl1Mwmpyed2KmCbxLEXAjSj-_sQF9XgzNJvOVK2IC8nAwzt0OVSOA.jpg?r=807"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW1w0cR1nRSWPhcsnAPCcnoLvdS0QEVZMEINrTfOouu5r33G_fuYZOZqwIVRw6fGcgul3jJXbQiqekkVMRGW8H3nQ4wD8m3oAL4HFoho3swYOw0O9kDsfQIaOIfnG7S4B-VN.jpg?r=e20"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQpnK-uuOe7H7X3RMJKcroyNCybbVqlpkQEBlMZSM0nhbfjXH5QtVXtsUJ1JaWAslHy83WBoWpKciuuoURdF9Ccug19-wV3w-Sghdp4FMz7pwnwewfUwIm5EfLzL9PqT-ApC.jpg?r=ea5"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXtJErMhtlXyJXl9bsAqyJofDd-iqhfmJzGa0wTiCkfbB15tiZW_Vbj4HvL7Ssubiee8Aqz8PjLANwV_4pAhlQ9GOqfsL-bd3iU.webp?r=cd8"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcdM5FUhIza-cMbqsKwiZ1Qf8IohEk0bYwCHdcISbvM5rKrzE6GCsaiLgWchu2Q6XhUiycUFby9Px1twB9UzUXMXUiiQAgje-VaGFswJ5mJDRJ12sZc7chL26lBldlIIq2xn.jpg?r=9a9"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWSZvK2iun4Pu_UVXI-BR46oKfLlvSwdq0CQtRWfwXoZKrWlJb55ZhiXD8KH4IhN46AXuIwGqk-ObL8C_q9TYd0iyOKdgRMkk8c.webp?r=acc"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSiHGQl-YqLeZ-IZmqOxz7pbxMKvUBTR86e15QIHtcOLeuuPiyZZ2dOtU9tbVTkh3KKuAFCUb4zVoA0Gt9P6ef5Xr_Dnt62ldS2u8c5v9desOkY1APv1ePPcDO6e8LRtMi0.jpg?r=cb4"
-						/>
-					</div>
-					<div class="content">
-						<img
-							src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWr6a3_UzHdK4GwmzXxCVIoYob0rK_Ex4yBiet0bmzcLLKmG3VcLLRjhVi1NYiE-dweEqa5mg0tJ82SrEnqoHqtQG_bPJ7ET6gQ.webp?r=adc"
-						/>
-					</div>
+			<div id="redirect">
+				<div id="player" class="top">
+					<div class="dark-left"></div>
+					<div class="dark-bottom"></div>
 				</div>
 			</div>
 		</main>
@@ -415,10 +427,11 @@
 			</div>
 
 			<div class="footer-copyright">
-				&copy; 2024 Netflix, Inc., Made by Christian Niro
+				&copy; 2024 Netflix, Inc., Made by Christian Niro (This Project is for
+				educational purposes only)
 			</div>
 		</footer>
-		
+
 		<script>
 			feather.replace();
 		</script>

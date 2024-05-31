@@ -1,3 +1,6 @@
+/*
+ Created by: Christian Niro
+ */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 :root {
@@ -101,6 +104,10 @@ a:hover {
 }
 .description {
   font-size: 1.2vw;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 800px) {
