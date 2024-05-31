@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const videos = {
         "locandina1": { videoId: "6RDSjDQGUqo", nextVideoId: "umZdaN37Nsc" },
         "locandina2": { videoId: "umZdaN37Nsc", nextVideoId: "WEn9Ss7HAzc" },
@@ -62,4 +62,4 @@
         
         window.localStorage.removeItem("playEventTriggered");
     };
-});*/
+});
