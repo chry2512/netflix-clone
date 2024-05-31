@@ -5,6 +5,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	let isEventTriggered = false;
 	const nav = document.querySelector("nav");
+	document.getElementById('player').classList.remove('top');
 
 	const videos = {
 		locandina1: { videoId: "6RDSjDQGUqo", nextVideoId: "umZdaN37Nsc" },
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	document.getElementById("playButton").addEventListener("click", function () {
 		isEventTriggered = true;
+		document.getElementById('player').classList.add('top');
 		// Rimuovi i file CSS che non vuoi
 		removeCSS("./styles/nav.css");
 		removeCSS("./styles/top.css");
@@ -43,10 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			.addEventListener("click", function () {
 				const videoInfo = videos[`locandina${i}`];
 				isEventTriggered = true;
+				document.getElementById('player').classList.add('top');
 	
 				// Rimuovi i file CSS che non vuoi
 				removeCSS("./styles/nav.css");
-				removeCSS("./styles/top.css");
+				//removeCSS("./styles/top.css");
 				removeCSS("./styles/content-row.css");
 	
 				// Aggiungi i file CSS che vuoi
@@ -145,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				const player = YT.get(iframe.id);
 				if (player) {
 					player.stopVideo();
+					player.destroy();
 				}
 			}
 			console.log("returning to index");
