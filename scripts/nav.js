@@ -23,7 +23,7 @@
 });*/
 document.getElementById("playButton").addEventListener("click", function () {
     window.localStorage.setItem("playEventTriggered", "playlist");
-    window.location.assign("/netflix-clone/page/player.html");
+    window.location.assign("https://chry2512.github.io/netflix-clone/page/player.html");
 });
 
 for (let i = 1; i <= 6; i++) {
