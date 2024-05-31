@@ -35,7 +35,6 @@ for (let i = 1; i <= 6; i++) {
 
 document.querySelectorAll(".nav-item").forEach((item) => {
     item.addEventListener("click", function () {
-        window.location.assign = "/netflix-clone/index.html";
-        console.log("returning to index");
+        window.location.assign("/netflix-clone/index.html");
     });
 });
