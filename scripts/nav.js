@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }*/
     document.getElementById("playButton").addEventListener("click", function () {
         window.localStorage.setItem("playEventTriggered", "playlist");
-        //window.location.assign("https://chry2512.github.io/netflix-clone/page/player.html");
-        window.location.href = "https://chry2512.github.io/netflix-clone/page/player.html";
+        window.location.assign("https://chry2512.github.io/netflix-clone/page/player.html");
+        //window.location.href = "https://chry2512.github.io/netflix-clone/page/player.html";
         console.log("playButton clicked");
     });
 });
