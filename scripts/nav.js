@@ -23,7 +23,7 @@
 });*/
 document.getElementById("playButton").addEventListener("click", function () {
     window.localStorage.setItem("playEventTriggered", "playlist");
-    window.location.assign("/nome-del-tuo-repository/page/player.html");
+    window.location.assign("/netflix-clone/page/player.html");
 });
 
 for (let i = 1; i <= 6; i++) {
