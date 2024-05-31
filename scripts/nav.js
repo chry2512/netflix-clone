@@ -23,10 +23,11 @@
 });*/
 document.getElementById("playButton").addEventListener("click", function () {
     window.localStorage.setItem("playEventTriggered", "playlist");
-    window.location.assign("https://chry2512.github.io/netflix-clone/page/player.html");
+    //window.location.assign("https://chry2512.github.io/netflix-clone/page/player.html");
+    window.location.href = "https://chry2512.github.io/netflix-clone/page/player.html";
 });
 
-for (let i = 1; i <= 6; i++) {
+/*for (let i = 1; i <= 6; i++) {
     document.getElementById(`locandina${i}`).addEventListener("click", function () {
         window.localStorage.setItem("playEventTriggered", `locandina${i}`);
         window.location.assign("/netflix-clone/page/player.html");
@@ -37,4 +38,4 @@ document.querySelectorAll(".nav-item").forEach((item) => {
     item.addEventListener("click", function () {
         window.location.assign("/netflix-clone/index.html");
     });
-});
+});*/
