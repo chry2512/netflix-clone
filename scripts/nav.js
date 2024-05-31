@@ -41,25 +41,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		document
 			.getElementById(`locandina${i}`)
 			.addEventListener("click", function () {
-				window.localStorage.setItem("playEventTriggered", `locandina${i}`);
-				const playEventTriggered =
-					window.localStorage.getItem("playEventTriggered");
-				const videoInfo = videos[playEventTriggered];
+				const videoInfo = videos[`locandina${i}`];
 				isEventTriggered = true;
+	
 				// Rimuovi i file CSS che non vuoi
 				removeCSS("./styles/nav.css");
 				removeCSS("./styles/top.css");
 				removeCSS("./styles/content-row.css");
-
+	
 				// Aggiungi i file CSS che vuoi
 				addCSS("./styles/player.css");
 				updateView();
 				createPlayer(videoInfo.videoId, videoInfo.nextVideoId);
 				window.scrollTo(0, 0);
-				window.localStorage.removeItem("playEventTriggered");
 			});
 	}
-
 	//dynamic css
 
 	// Funzione per rimuovere un file CSS
