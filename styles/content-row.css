@@ -53,6 +53,9 @@
 
  
 @media (max-width: 800px) {
+  .content-row {
+    margin: 10vw 0;
+  }
   .content {
     width: 50%;
     margin-right: 0;

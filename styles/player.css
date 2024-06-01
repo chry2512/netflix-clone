@@ -129,6 +129,48 @@ nav {
     padding-top: 43%;
 }
 
+@media (max-width: 305px) {
+    .nav-icons {
+      gap: 10px;
+    }
+  
+    .brand {
+      width: 50px;
+      margin-top: -5px;
+    }
+    .nav-items {
+      display: none !important;
+    }
+    .small {
+      display: block;
+      font-size: 2vw;
+  
+    }
+    
+}
+  
+  
+@media (min-width: 306px) and (max-width: 800px) {
+   
+    .brand {
+      width: 90px;
+      margin-top: -5px;
+    }
+    .nav-items {
+      display: none !important;
+    }
+    .small {
+      display: block;
+      font-size: 2vw;
+  
+    }
+    .hide {
+        display: none;
+    }
+}
+    
+
+
 @media (max-width: 1800px) {
     .top {
         height: 80vw;
@@ -149,17 +191,3 @@ nav {
 }
 
 
-@media (max-width: 800px) {
-    .nav-items {
-        display: none !important;
-    }
-
-    .small {
-        display: block;
-        font-size: 2vw;
-    }
-
-    .hide {
-        display: none;
-    }
-}
