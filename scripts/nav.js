@@ -158,6 +158,7 @@ class VideoPlayer {
 
 		document.getElementById("playButton").addEventListener("click", handlePlayerClick.bind(this));
 		document.getElementById("run-all").addEventListener("click", handlePlayerClick.bind(this));
+		document.getElementById("run-all-1").addEventListener("click", handlePlayerClick.bind(this));
         
 		async function handleNavigationClick() {
 			this.isEventTriggered = false;
