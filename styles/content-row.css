@@ -75,7 +75,7 @@
 
   .rank svg {
     position: relative;
-    top: -5px;
+    top: 0px;
     left: -10px;
     right: auto;
     height: 70px;
@@ -115,7 +115,7 @@
 
   .rank svg {
     position: relative;
-    top: -5px;
+    top: 0px;
     left: 7px;
     right: auto;
     bottom: 0;
@@ -151,7 +151,7 @@
 
   .rank svg {
     position: relative;
-    top: -5px;
+    top: 0px;
     left: 7px;
     right: auto;
     bottom: 0;
@@ -164,6 +164,11 @@
     right: -1px;
     height: 120px;
   }
+
+  .slider {
+    height: 135px; 
+  }
+
 
 }
 
@@ -187,7 +192,7 @@
 
   .rank svg {
     position: relative;
-    top: -5px;
+    top: 0px;
     left: 7px;
     right: auto;
     bottom: 0;
@@ -199,6 +204,10 @@
     
     right: -1px;
     height: 120px;
+  }
+
+  .slider {
+    height: 135px; 
   }
 
 
@@ -235,7 +244,9 @@
     right: -5x;
     height: 120px;
   }
-
+  .slider {
+    height: 135px; 
+  }
 
 }
 
@@ -272,6 +283,10 @@
     height: 120px;
   }
 
+  .slider {
+    height: 135px; 
+  }
+
 
 }
 
@@ -305,6 +320,9 @@
     
     right: -5x;
     height: 120px;
+  }
+  .slider {
+    height: 135px; 
   }
 
 
@@ -341,6 +359,9 @@
     right: -5x;
     height: 120px;
   }
+  .slider {
+    height: 135px; 
+  }
 
 
 }
@@ -357,10 +378,25 @@
   .content-row {
     margin: 8vw 0;
   }
-
-  .rank img {
-    left: 90px;
+  .rank svg {
+    position: relative;
+    top: 10px;
+    left: 7px;
+    right: auto;
+    bottom: 0;
+    height: 80%;
+    width: 50%;
   }
+  rank img {
+    
+    height: 125px;
+    width: 50%;
+  }
+
+  .slider {
+    height: 13opx; 
+  }
+
 
 }
 
@@ -379,7 +415,7 @@
 
   .rank svg {
     position: relative;
-    top: -5px;
+    top: 10px;
     left: 7px;
     right: auto;
     bottom: 0;
@@ -389,10 +425,13 @@
 
   .rank img {
     
-    right: -40x;
-    height: 120px;
+    height: 130px;
+    width: 50%;
   }
- 
+
+  .slider {
+    height: 150px; 
+  }
 
 }
 
@@ -411,7 +450,7 @@
 
   .rank svg {
     position: relative;
-    top: -5px;
+    top: 15px;
     left: 7px;
     right: auto;
     bottom: 0;
@@ -419,5 +458,8 @@
     width: 50%;
   }
 
+  .slider {
+    height: 150px; 
+  }
 
 }
