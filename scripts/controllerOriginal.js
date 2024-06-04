@@ -5,11 +5,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const videos = {
 		locandina1: { videoId: "6RDSjDQGUqo", nextVideoId: "umZdaN37Nsc" },
-		locandina2: { videoId: "umZdaN37Nsc", nextVideoId: "WEn9Ss7HAzc" },
-		locandina3: { videoId: "WEn9Ss7HAzc", nextVideoId: "e6EhrUz3MRo" },
-		locandina4: { videoId: "e6EhrUz3MRo", nextVideoId: "-f7rTlSyFvA" },
-		locandina5: { videoId: "-f7rTlSyFvA", nextVideoId: "xibVBYLTtW0" },
-		locandina6: { videoId: "xibVBYLTtW0", nextVideoId: "6RDSjDQGUqo" }
+		locandina2: { videoId: "umZdaN37Nsc", nextVideoId: "xibVBYLTtW0" },
+		locandina3: { videoId: "xibVBYLTtW0", nextVideoId: "-f7rTlSyFvA" },
+		locandina4: { videoId: "-f7rTlSyFvA", nextVideoId: "PBo5EWnHGWc" },
+		locandina5: { videoId: "PBo5EWnHGWc", nextVideoId: "WEn9Ss7HAzc" },
+		locandina6: { videoId: "WEn9Ss7HAzc", nextVideoId: "Kb8fxNGSRmo" },
+		locandina7: { videoId: "Kb8fxNGSRmo", nextVideoId: "xibVBYLTtW0" },
+		locandina8: { videoId: "xibVBYLTtW0", nextVideoId: "Olr22VyI3LE" },
+		locandina9: { videoId: "Olr22VyI3LE", nextVideoId: "e6EhrUz3MRo" },
+		locandina10: { videoId: "e6EhrUz3MRo", nextVideoId: "6RDSjDQGUqo" }
 	};
 
 	document.querySelectorAll(".nav-item").forEach((item) => {
