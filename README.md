@@ -5,4 +5,4 @@ This is the clone of a popular video streaming website [Netflix](https://netflix
  <br>For visit my project click on [Netflix-Clone](https://chry2512.github.io/netflix-clone)  or Scan Me.
 
  
-<img src="https://github.com/chry2512/netflix-clone/assets/91950577/4e6abfb1-aff2-4173-9a4b-7adb570b09a3" width="200">
+<img src="https://github.com/chry2512/netflix-clone/assets/91950577/8d106915-341a-4f78-8728-12171b50e714" width="200">
