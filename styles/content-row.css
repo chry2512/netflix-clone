@@ -21,6 +21,7 @@
 
 .slider {
   overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
   display: inline-block;
 }
@@ -89,7 +90,7 @@
     bottom: 0;
     right: 0;
     left: 40px;
-    width: 70%;
+    width: 60%;
     height: 90%;
     background-size: cover;
     object-fit: cover;
@@ -160,9 +161,9 @@
   }
 
   .rank img {
-    
-    right: -1px;
-    height: 120px;
+    height: 115px;
+    width: 90px;
+    left: 100px;
   }
 
   .slider {
@@ -201,9 +202,9 @@
   }
 
   .rank img {
-    
-    right: -1px;
-    height: 120px;
+    height: 115px;
+    width: 90px;
+    left: 100px;
   }
 
   .slider {
@@ -240,9 +241,9 @@
   }
 
   .rank img {
-    
-    right: -5x;
-    height: 120px;
+    height: 115px;
+    width: 90px;
+    left: 100px;
   }
   .slider {
     height: 135px; 
@@ -278,9 +279,9 @@
   }
 
   .rank img {
-    
-    right: -5x;
-    height: 120px;
+    height: 115px;
+    width: 90px;
+    left: 90px;
   }
 
   .slider {
@@ -317,9 +318,9 @@
   }
 
   .rank img {
-    
-    right: -5x;
-    height: 120px;
+    height: 115px;
+    width: 90px;
+    left: 90px;
   }
   .slider {
     height: 135px; 
@@ -355,9 +356,9 @@
   }
 
   .rank img {
-    
-    right: -5x;
-    height: 120px;
+    height: 115px;
+    width: 90px;
+    left: 100px;
   }
   .slider {
     height: 135px; 
@@ -374,9 +375,8 @@
     width: 30%;
     
   }
-
   .content-row {
-    margin: 8vw 0;
+    margin: 12vw 0;
   }
   .rank svg {
     position: relative;
@@ -388,13 +388,15 @@
     width: 50%;
   }
   .rank img {
-    
-    height: 125px;
-    width: 50%;
+    height: 130px;
+    width: 100px;
+    left: 110px;
   }
 
   .slider {
-    height: 13opx; 
+    margin-top: 20px;
+    margin-bottom: -50px;
+    height: 130px; 
   }
 
 
@@ -424,9 +426,9 @@
   }
 
   .rank img {
-    
     height: 130px;
-    width: 50%;
+    width: 100px;
+    left: 110px;
   }
 
   .slider {
@@ -447,6 +449,11 @@
     margin-top: 40px;
     margin-bottom: 50px;
   }
+  .rank img {
+    
+    height: 135px;
+    width: 50%;
+  }
 
   .rank svg {
     position: relative;
@@ -462,4 +469,13 @@
     height: 150px; 
   }
 
+}
+
+@media(min-width: 1201px)  {
+  .rank img {
+    height: 130px;
+    width: 100px;
+    left: 110px;
+  }
+  
 }
