@@ -1,8 +1,12 @@
-/*
- Created by: Christian Niro
- Note. this is an adapter controller for github pages.
+
+/**
+ * Created by: Christian Niro
+ * Class representing a video player. it's used in the current version of the website.
  */
 class VideoPlayer {
+	/**
+	 * Create a video player.
+	 */
 	constructor() {
 		this.index = 0;
 		this.isEventTriggered = false;
@@ -15,8 +19,12 @@ class VideoPlayer {
 			"./styles/content-row.css",
 			"./styles/player.css"
 		];
+
+		// this is the list of videos to play for the custom player, 
+		// it's not used in the current version of the website.
+		
 		this.videos = {
-			locandina1: { videoId: "6RDSjDQGUqo", nextVideoId: "umZdaN37Nsc" },
+			locandina1: { videoId: "FZKlTNUwct4", nextVideoId: "umZdaN37Nsc" },
 			locandina2: { videoId: "umZdaN37Nsc", nextVideoId: "xibVBYLTtW0" },
 			locandina3: { videoId: "xibVBYLTtW0", nextVideoId: "-f7rTlSyFvA" },
 			locandina4: { videoId: "-f7rTlSyFvA", nextVideoId: "PBo5EWnHGWc" },
@@ -29,6 +37,10 @@ class VideoPlayer {
 		};
 	}
 
+	/**
+	 * Preload a CSS file.
+	 * @param {string} file - The path to the CSS file.
+	 */
 	preloadCSS(file) {
 		const link = document.createElement("link");
 		link.rel = "preload";
@@ -37,6 +49,11 @@ class VideoPlayer {
 		document.head.appendChild(link);
 	}
 
+	/**
+	 * Add a CSS file to the document.
+	 * @param {string} filename - The path to the CSS file.
+	 * @returns {Promise} A promise that resolves when the CSS file is loaded.
+	 */
 	addCSS(filename) {
 		return new Promise((resolve, reject) => {
 			var fileref = document.createElement("link");
@@ -49,6 +66,11 @@ class VideoPlayer {
 		});
 	}
 
+	/**
+	 * Remove a CSS file from the document.
+	 * @param {string} filename - The path to the CSS file.
+	 * @returns {Promise} A promise that resolves when the CSS file is removed.
+	 */
 	removeCSS(filename) {
 		return new Promise((resolve, reject) => {
 			var targetelement = "link";
@@ -66,6 +88,10 @@ class VideoPlayer {
 		});
 	}
 
+	/**
+	 * Update the view based on the event trigger state.
+	 * @returns {Promise} A promise that resolves when the view is updated.
+	 */
 	updateView() {
 		return new Promise((resolve, reject) => {
 			if (this.isEventTriggered) {
@@ -79,6 +105,11 @@ class VideoPlayer {
 		});
 	}
 
+	/**
+	 * Create a YouTube playlist player.
+	 * @param {number} index - The index of the video to play.
+	 * @returns {YT.Player} The YouTube player instance.
+	 */
 	createPlayListPlayer(index) {
 		return new YT.Player("player", {
 			height: "390",
@@ -86,7 +117,7 @@ class VideoPlayer {
 			playerVars: {
 				listType: "playlist",
 				autoplay: 1,
-				list: "PLada4GCFXoyTy5mkRElLK3bTfvUgMMrMz"
+				list: "PLada4GCFXoyQzGRaWRezpqRiEFOK95gzz"
 			},
 			events: {
 				onReady: function (event) {
@@ -97,8 +128,9 @@ class VideoPlayer {
 		});
 	}
 
-
-
+	/**
+	 * Initialize the video player.
+	 */
 	init() {
 		this.cssFiles.forEach((file) => this.preloadCSS(file));
 
@@ -130,13 +162,16 @@ class VideoPlayer {
 					//this.createPlayer(videoInfo.videoId, videoInfo.nextVideoId);
 
 					//use type playlist for default player with custoim index
-				    this.index = i - 1;
+					this.index = i - 1;
 					this.createPlayListPlayer(this.index);
 					window.scrollTo(0, 0);
 				});
 		}
 
-
+		/**
+		 * Handle player click event.
+		 * @param {boolean} [scrollToTop=false] - Whether to scroll to the top of the page.
+		 */
 		async function handlePlayerClick(scrollToTop = false) {
 			this.isEventTriggered = true;
 			this.playerElement.classList.add("top");
@@ -159,7 +194,10 @@ class VideoPlayer {
 		document.getElementById("playButton").addEventListener("click", handlePlayerClick.bind(this));
 		document.getElementById("run-all").addEventListener("click", handlePlayerClick.bind(this));
 		document.getElementById("run-all-1").addEventListener("click", handlePlayerClick.bind(this));
-        
+		
+		/**
+		 * Handle navigation click event.
+		 */
 		async function handleNavigationClick() {
 			this.isEventTriggered = false;
 			const iframe = document.querySelector("iframe");
