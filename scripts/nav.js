@@ -94,10 +94,13 @@ class VideoPlayer {
 	 */
 	updateView() {
 		return new Promise((resolve, reject) => {
+			// rendi visibile skip back solo quando viene avviato il player su mobile
 			if (this.isEventTriggered) {
+				document.getElementById("backhome2").style.display = "block";
 				document.querySelector("#home").classList.add("hidden");
 				document.querySelector("#redirect").classList.remove("hidden");
 			} else {
+				document.getElementById("backhome2").style.display = "none";
 				document.querySelector("#home").classList.remove("hidden");
 				document.querySelector("#redirect").classList.add("hidden");
 			}
@@ -227,6 +230,8 @@ class VideoPlayer {
 		});
 		
 		document.getElementById("backhome").addEventListener("click", handleNavigationClick.bind(this));
+		document.getElementById("backhome2").addEventListener("click", handleNavigationClick.bind(this));
+
 		
 	}
 }
